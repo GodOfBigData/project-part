@@ -1,0 +1,14 @@
+version: '3.5'
+services:
+  greenplum:
+    image: greenplum
+    ports:
+      - "5434:5432"
+    container_name: greenplum
+    restart: always
+    build: .
+    volumes:
+      - db:/gpdata/master/gpseg-1/
+    
+volumes:
+  db:

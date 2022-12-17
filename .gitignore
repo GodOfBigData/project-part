@@ -1,0 +1,4 @@
+/airflow/logs
+/airflow/plugins
+/greenplum/setEnv.sh
+/kafkaConsumer/env
